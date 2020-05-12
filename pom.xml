@@ -12,7 +12,7 @@
   </parent>
   <groupId>pl.pandait</groupId>
   <artifactId>panda</artifactId>
-  <version>3.0.0</version>
+  <version>3.1.0-SNAPSHOT</version>
   <name>panda</name>
   <description>Demo project for Spring Boot</description>
 
