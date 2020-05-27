@@ -34,7 +34,7 @@ public class PandaApplicationSeleniumTest {
         // Wyświetlamy informacje, że udało się otwozyć stronę
         System.out.println("Successfully opened the website");
         //Czekamy 2 sekundy
-        Thread.sleep(2000);
+        Thread.sleep(9000);
     }
 
     @Test
