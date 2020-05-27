@@ -1,4 +1,5 @@
 
+
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -11,13 +12,13 @@
     <!-- lookup parent from repository -->
   </parent>
   <groupId>pl.pandait</groupId>
-  <artifactId>panda</artifactId>
-  <version>2.0.0</version>
+  <artifactId>panda-application</artifactId>
+  <version>0.0.2-SNAPSHOT</version>
   <name>panda</name>
   <description>Demo project for Spring Boot</description>
 
   <properties>
-    <java.version>1.8</java.version>
+    <java.version>11</java.version>
   </properties>
 
   <dependencies>
@@ -120,6 +121,7 @@
         </plugins>
       </build>
     </profile>
+
     <profile>
       <id>selenium</id>
       <build>
@@ -138,17 +140,19 @@
       </build>
     </profile>
   </profiles>
-<distributionManagement>
- <repository>
-  <id>artifactory</id>
-  <name>release</name>
-  <url>http://localhost:8081/artifactory/libs-release-local</url>
- </repository>
- <snapshotRepository>
-  <id>artifactory</id>
-  <name>snapshots</name>
-  <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
- </snapshotRepository>
-</distributionManagement>
+
+        <distributionManagement>
+                <repository>
+                        <id>artifactory</id>
+                        <name>release</name>
+                        <url>http://artifactorycompose:8081/artifactory/libs-release-local</url>
+                </repository>
+                <snapshotRepository>
+                        <id>artifactory</id>
+                        <name>snapshots</name>
+                        <url>http://artifactorycompose:8081/artifactory/libs-snapshot-local</url>
+                </snapshotRepository>
+        </distributionManagement>
+        
 </project>
 
