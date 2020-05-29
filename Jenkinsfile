@@ -20,7 +20,7 @@ pipeline {
       }
       stage('Get code from repo') {
          steps {
-           git credentialsId: 'f9b04898-9e16-402c-a4f5-e41f60e88d00', url: 'https://github.com/arturkwietniak/apka_maven.git'
+           checkout scm
          }
       }
       stage('Build app') {
