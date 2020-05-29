@@ -10,7 +10,7 @@
     <!-- lookup parent from repository -->
   </parent>
   <groupId>pl.pandait</groupId>
-  <artifactId>panda</artifactId>
+  <artifactId>panda-application</artifactId>
   <version>1.1.0</version>
   <name>panda</name>
   <description>Demo project for Spring Boot</description>
@@ -123,7 +123,7 @@
               <repository>panda-application</repository>
               <tag>${project.version}</tag>
               <buildArgs>
-                <JAR_FILE>target/${project.artifactId}-${project.version}.jar</JAR_FILE>
+                <JAR_FILE>target/${project.artifactId}:${project.version}.jar</JAR_FILE>
               </buildArgs>
             </configuration>
             <dependencies>
